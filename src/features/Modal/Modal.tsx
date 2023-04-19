@@ -26,7 +26,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
                     >
                         <div className={style.buttons}>
                             <button onClick={onClose} className="button">
-                                <img src="/src/assets/close.png" />
+                                <img src="../src/assets/close.png" />
                             </button>
                         </div>
                         <div className={style.form}>{children}</div>
