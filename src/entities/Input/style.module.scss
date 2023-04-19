@@ -1,0 +1,18 @@
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    label {
+        color: #555;
+        padding: 0 0 0 0.5rem;
+    }
+    input {
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        background-color: #eee;
+        border-radius: 0.25rem;
+        padding: 0.5rem 0.5rem;
+    }
+}

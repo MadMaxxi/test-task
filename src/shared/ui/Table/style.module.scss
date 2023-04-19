@@ -1,0 +1,56 @@
+.table {
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    border-radius: 0.25rem;
+    .left {
+        justify-content: flex-start;
+    }
+
+    &__head {
+        display: grid;
+        background-color: rgba(0, 127, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        position: sticky;
+        top: 0;
+
+        div[role="columnheader"] {
+            font-style: normal;
+            font-weight: 500;
+            padding: 5px 5px;
+        }
+        &:hover {
+            background-color: rgba(0, 127, 255, 0.3) !important;
+        }
+    }
+
+    &__row {
+        display: grid;
+        overflow: visible;
+        width: fit-content;
+        min-height: 50px;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: rgba(0, 127, 255, 0.2) !important;
+        }
+    }
+
+    &__cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 500;
+        padding: 5px 5px;
+    }
+
+    .image {
+        cursor: pointer;
+    }
+
+    .edit {
+        cursor: pointer;
+    }
+}
